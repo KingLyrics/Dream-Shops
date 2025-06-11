@@ -18,8 +18,7 @@ public class Product {
     private int inventory;
     private String description;
 
-    public Product() {
-    }
+    public Product() {}
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "category_id")
